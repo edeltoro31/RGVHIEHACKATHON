@@ -21,6 +21,10 @@ app.get('/patient_portal', (req, res) => {
     res.render("patient_portal.html")
 })
 
+app.get('/patient_page', (req, res) => {
+  res.render("patient_page.html")
+})
+
 var server = app.listen(app.get('port'), function() {
 	console.log("Server started...")
 })
