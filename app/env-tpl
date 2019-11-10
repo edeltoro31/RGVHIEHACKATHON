@@ -1,6 +1,0 @@
-export APP_INIT_URL=http://localhost:8888  //your Aidbox server URL
-export APP_CLIENT_ID=fullstack-app              
-export APP_CLIENT_SECRET=my-super-secret
-export APP_URL=http://localhost:3000
-export APP_SECRET=123456789
-export PORT=3000
