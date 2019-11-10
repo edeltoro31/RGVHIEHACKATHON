@@ -77,7 +77,9 @@
                                         </button>
                                         </div>
                                         <div class="modal-body">
-                                        ...
+                                        {{#medication}}
+                                            <p><b>{{resource.medicationCodeableConcept.text}}</b> {{resource.authoredOn}}</p>
+                                        {{/medication}}
                                         </div>
                                         <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

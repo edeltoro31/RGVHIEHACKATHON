@@ -31,9 +31,6 @@ app.get('/patient_search', (req, res) => {
   res.render("patient_search.html")
 })
 
-app.get('/patient_page', (req, res) => {
-  res.render("patient_page.html")
-})
 
 app.get('/patient_page/:name', (req, res) => {
 
@@ -76,8 +73,11 @@ app.get('/patient_page/:name/:id', (req, res) => {
               }
             },
             function (error, response, body2) {
-              console.log(JSON.parse(body2));
+              console.log();
+              data = JSON.parse(body2);
+              data.entry.sort((a, b) => b.resource.authoredOn.localeCompare(a.resource.authoredOn));
               res.render("patient_page.html", {
+                medication: data.entry,
                 name: name,
                 birth: birth,
                 address: address,

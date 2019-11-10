@@ -74,12 +74,12 @@
                         </div>
                     
                         <!-- Login Form -->
-                        <form method="GET" action="/patient_page">
-                          <input type="text" id="login" class="fadeIn second" name="login" placeholder="Patient's Full Name">
-                          <input type="text" id="password" class="fadeIn third" name="login" placeholder="Date of Birth">
-                          <input type="text" id="password" class="fadeIn third" name="login" placeholder="Address">
-                          <input type="submit" class="fadeIn fourth" value="Search Patient">
-                        </form>
+                        <div>
+                          <input type="text" id="name" class="fadeIn second" name="name" placeholder="Patient's Full Name">
+                          <input type="text" class="fadeIn third" placeholder="Date of Birth">
+                          <input type="text" class="fadeIn third" placeholder="Address">
+                          <button id="search" type="submit" class="btn btn-info btn-lg">Search Patient</button>
+                        </div>
                     
                         <!-- Remind Passowrd -->
                         <div id="formFooter">
@@ -141,5 +141,11 @@
             $(this).css('background-color', "#282828");
             $(this).css('color', "#D3D3D3");
         });
+
+        $("#search").on("click", function() {
+            event.preventDefault();
+            var name = $("#name").val()
+            window.location.href = "/patient_page/" + name;
+        })
     </script>
 </html>
