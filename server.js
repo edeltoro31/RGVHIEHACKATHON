@@ -25,6 +25,18 @@ app.get('/patient_page', (req, res) => {
   res.render("patient_page.html")
 })
 
+app.get('/pharmacy_page', (req, res) => {
+  res.render("pharmacy_page.html")
+})
+
+app.get('/physician_page', (req, res) => {
+  res.render("physician_page.html")
+})
+
+app.get('/ems_page', (req, res) => {
+  res.render("ems_page.html")
+})
+
 var server = app.listen(app.get('port'), function() {
 	console.log("Server started...")
 })
