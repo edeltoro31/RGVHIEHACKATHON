@@ -1,0 +1,145 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <br> <br>
+
+        <div id="main">
+            <div id="row1" class="wrapper fadeInDown">
+                <div>
+                    <table>
+                        <tr>
+                            <td>Dashboard</td>
+                        </tr>
+                        <tr>
+                            <td>News Feed</td>
+                        </tr>
+                        <tr>
+                            <td>Inbox</td>
+                        </tr>
+                        <tr>
+                            <td>Tasks</td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <table>
+                        <tr>
+                            <td>Buttons</td>
+                        </tr>
+                        <tr>
+                            <td>Typography</td>
+                        </tr>
+                        <tr>
+                            <td>Forms</td>
+                        </tr>
+                        <tr>
+                            <td>Tables</td>
+                        </tr>
+                        <tr>
+                            <td>Charts</td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <table>
+                        <tr>
+                            <td>More Pages</td>
+                        </tr>
+                        <tr>
+                            <td>Logout</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="row2" style="float: left">
+
+                    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+                    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+                    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                    <link rel="stylesheet" type="text/css" href="css/search.css">
+                    <!------ Include the above in your HEAD tag ---------->
+                    
+                    <div class="wrapper fadeInDown">
+                      <div id="formContent">
+                        <!-- Tabs Titles -->
+                    
+                        <!-- Icon -->
+                        <div class="fadeIn first">
+                          <h5>Patient Info</h5>
+                        </div>
+                    
+                        <!-- Login Form -->
+                        <form method="GET" action="/patient_page">
+                          <input type="text" id="login" class="fadeIn second" name="login" placeholder="Patient's Full Name">
+                          <input type="text" id="password" class="fadeIn third" name="login" placeholder="Date of Birth">
+                          <input type="text" id="password" class="fadeIn third" name="login" placeholder="Address">
+                          <input type="submit" class="fadeIn fourth" value="Search Patient">
+                        </form>
+                    
+                        <!-- Remind Passowrd -->
+                        <div id="formFooter">
+                          
+                        </div>
+                    
+                      </div>
+                    </div>
+
+            </div>
+        </div>
+
+    </body>
+
+    <style>
+
+        #patient {
+            height: 200px;
+        }
+ 
+        .card {
+            border-radius: 5px;
+        }
+        #right_row {
+            padding-left: 30px;
+        }
+        #row1 {
+            padding-left: 20px;
+            width: 25%;
+            float: left;
+        }
+        #row2 {
+            width: 75%;
+            padding-left: 30px;
+        }
+        table, td {
+            width: 21rem;
+            border-bottom: 1px solid grey;
+            background-color: #282828;
+            color: #D3D3D3;
+            padding-left: 20px;
+            border-radius: 5px;
+        }
+
+        td {
+            height: 50px;
+        }
+        table {
+            border-radius: 25px;
+        }
+    </style>
+
+    <script>
+        $("td").mouseover(function() {
+            $(this).css('background-color', "#404040");
+            $(this).css('color', "black"); 
+        });
+        $("td").mouseleave(function() {
+            $(this).css('background-color', "#282828");
+            $(this).css('color', "#D3D3D3");
+        });
+    </script>
+</html>
