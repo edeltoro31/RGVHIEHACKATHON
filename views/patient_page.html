@@ -14,33 +14,13 @@
                             <td>Dashboard</td>
                         </tr>
                         <tr>
-                            <td>News Feed</td>
+                            <td>Medication</td>
                         </tr>
                         <tr>
-                            <td>Inbox</td>
+                            <td>Medical History</td>
                         </tr>
                         <tr>
-                            <td>Tasks</td>
-                        </tr>
-                    </table>
-
-                    <br>
-
-                    <table>
-                        <tr>
-                            <td>Buttons</td>
-                        </tr>
-                        <tr>
-                            <td>Typography</td>
-                        </tr>
-                        <tr>
-                            <td>Forms</td>
-                        </tr>
-                        <tr>
-                            <td>Tables</td>
-                        </tr>
-                        <tr>
-                            <td>Charts</td>
+                            <td>Payment/Balance</td>
                         </tr>
                     </table>
 
@@ -48,7 +28,27 @@
 
                     <table>
                         <tr>
-                            <td>More Pages</td>
+                            <td>Appointments</td>
+                        </tr>
+                        <tr>
+                            <td>Prescriptions</td>
+                        </tr>
+                        <tr>
+                            <td>Exams</td>
+                        </tr>
+                        <tr>
+                            <td>Procedures</td>
+                        </tr>
+                        <tr>
+                            <td>Images</td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <table>
+                        <tr>
+                            <td>Labs</td>
                         </tr>
                         <tr>
                             <td>Logout</td>
@@ -63,9 +63,31 @@
                     <div class="card" style="width: 21rem; height: 12rem;">
                         <div class="card-body">
                             <h5 class="card-title">Medication</h5>
-                           
-                            <a href="#" class="card-link">View All Medication</a>
-                        </div>
+                            <p class="card-text"> Find medical information, terminology and advice including side effects, drug interactions & medication over dose <a href="https://mor.nlm.nih.gov/RxNav/">here</a></p>
+                            <a href="#" class="card-link" data-toggle="modal" data-target="#medicationModal">View All Medication</a>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="medicationModal" tabindex="-1" role="dialog" aria-labelledby="medicationModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="medicationModalLabel">Medication</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                        ...
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
                     </div>
 
                     <br> <br>
@@ -73,11 +95,8 @@
                     <div class="card" style="width: 21rem; height: 12rem;">
                         <div class="card-body">
                             <h5 class="card-title">Allergies</h5>
-                            <ul>
-                                <li>Penecilin</li>
-                                <li>Peanuts</li>
-                            </ul>
-                            <a href="#" class="card-link">View All Allergies</a>
+
+                            <a href="#" class="card-link" data-toggle="modal" data-target="#allergieModal">View All Allergies</a>
                         </div>
                     </div>
 
@@ -89,7 +108,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Diagnoses</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="card-link">View All Diagnoses</a>
+                                <a href="#" class="card-link" data-toggle="modal" data-target="#diagnosesModal">View All Diagnoses</a>
                             </div>
                         </div>
     
@@ -99,7 +118,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Labs & Vaccines</h5>
    
-                                <a href="#" class="card-link">View All Labs & Vaccines</a>
+                                <a href="#" class="card-link" data-toggle="modal" data-target="#labsvaccinesModal">View All Labs & Vaccines</a>
                             </div>
                         </div>
                 </div>
@@ -122,6 +141,76 @@
         </div>
 
     </body>
+
+        <!--Allergie Modal -->
+        <div class="modal fade" id="allergieModal" tabindex="-1" role="dialog" aria-labelledby="allergieModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="allergieModalLabel">Allergies</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                    ...
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+
+        <!--Diagnoses Modal -->
+        <div class="modal fade" id="diagnosesModal" tabindex="-1" role="dialog" aria-labelledby="diagnosesModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="diagnosesModalLabel">Diagnoses</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                    ...
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+
+        <!--Labs & Vaccines Modal -->
+        <div class="modal fade" id="labsvaccinesModal" tabindex="-1" role="dialog" aria-labelledby="labsvaccinesModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="labsvaccinesModalLabel">Labs & Vaccines</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                    ...
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+
 
     <style>
 

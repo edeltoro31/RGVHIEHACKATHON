@@ -21,6 +21,10 @@ app.get('/patient_portal', (req, res) => {
     res.render("patient_portal.html")
 })
 
+app.get('/patient_login', (req, res) => {
+  res.render('patient_login.html')
+})
+
 app.get('/patient_search', (req, res) => {
   res.render("patient_search.html")
 })

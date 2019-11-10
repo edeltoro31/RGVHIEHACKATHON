@@ -30,10 +30,42 @@
 <!--===============================================================================================-->
 </head>
 <body style="background-color: #999999;">
-	
+
 	<div class="limiter">
 		<div class="container-login100">
-			<div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
+            <div class="login100-more" style="background-image: url('images/bg-01.jpg');">
+            
+                <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/search.css">
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <h5>Sign in Portal</h5>
+    </div>
+
+    <!-- Login Form -->
+    <form method="GET" action="/patient_page">
+      <input type="text" id="username" class="fadeIn first" name="user" placeholder="Username">
+      <input type="text" id="password" class="fadeIn second" name="pwd" placeholder="Password">
+      <input type="submit" class="fadeIn third" value="Connect">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      
+    </div>
+
+  </div>
+</div>
+            
+            </div>
 
 			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
 				<form class="login100-form validate-form">
@@ -83,7 +115,6 @@
 								</span>
 							</label>
 						</div>
-
 						
 					</div>
 
@@ -95,7 +126,7 @@
 							</button>
 						</div>
 
-						<a href="patient_login" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
+						<a href="/patient_login" id="sign_in" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
 							Sign in
 							<i class="fa fa-long-arrow-right m-l-5"></i>
 						</a>
@@ -104,9 +135,10 @@
 			</div>
 		</div>
 	</div>
-	
+    
 <!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>    
 <!--===============================================================================================-->
 	<script src="vendor/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
