@@ -1,4 +1,3 @@
-
 const express = require('express');
 const path = require('path');
 const headers = require('headers')
@@ -31,6 +30,9 @@ app.get('/patient_search', (req, res) => {
   res.render("patient_search.html")
 })
 
+app.get('/patient_page', (req, res) => {
+  res.render("patient_page.html")
+})
 
 app.get('/patient_page/:name', (req, res) => {
 
