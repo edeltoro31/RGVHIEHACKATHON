@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/edeltoro31/RGVHIEHACKATHON#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-handlebars": "^3.1.0",
     "express-session": "^1.17.0",
     "headers": "^0.9.6",
